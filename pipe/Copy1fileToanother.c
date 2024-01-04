@@ -17,7 +17,7 @@ int main(int argc,char*argv[])
     int readBytes=read(fd1,buffer,sizeof(buffer));
     buffer[readBytes]='\0';
     printf("%s",buffer);
-    write(fd[1],buffer,sizeof(buffer));
+    write(fd[1],buffer,readBytes);
     // for(int i=0;i<readBytes;i++)
     //   {
     //     printf("%c",buffer[i]);
